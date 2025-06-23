@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
     public HealthSystem healthSystem;
-    public Text healthText; 
+    public TMP_Text healthText; 
 
     void Start()
     {
@@ -19,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
         if (healthSystem.IsDead())
         {
             Debug.Log("Jugador muerto");
-            
         }
     }
 

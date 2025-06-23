@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
     public int gold = 0;
-    public Text goldText;
+    public TMP_Text goldText;
 
     void Start()
     {
