@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.74650204, b: 0, a: 1}
+  m_Color: {r: 0.9559822, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,9 +97,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2650581033287119642}
   - component: {fileID: 1056994308198633751}
-  - component: {fileID: 9217549329520526083}
+  - component: {fileID: 9124754082558528386}
   m_Layer: 0
-  m_Name: Trap
+  m_Name: MimicEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9217549329520526083
+--- !u!114 &9124754082558528386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2198648418911586347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ce83324dff2dc41b780cb801976926, type: 3}
+  m_Script: {fileID: 11500000, guid: fa95a6ea42c8592418c32d06d7f39e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mimicPrefab: {fileID: 2198648418911586347, guid: 6f477ee7616c33348a74ae2b766747b4, type: 3}
+  damage: 10
