@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
         if (healthSystem.IsDead())
         {
             Debug.Log("Jugador muerto");
+            SceneManager.LoadScene("GameOver");
         }
     }
 

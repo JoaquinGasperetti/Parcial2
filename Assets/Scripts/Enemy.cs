@@ -3,8 +3,10 @@ using UnityEngine;
 public class Enemy : TempleObject
 {
     public int damage = 10;
+    public float lifetime = 10f;
 
     private PlayerHealth playerHealth;
+    private float timer = 0f;
 
     protected virtual void Start()
     {
@@ -12,6 +14,16 @@ public class Enemy : TempleObject
         gameObject.AddComponent<EnemyMovement>();
     }
 
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= lifetime)
+        {
+            Debug.Log("El enemigo se autodestruye por inactividad.");
+            Destroy(gameObject);
+        }
+    }
 
     public override void Interact()
     {
